@@ -12,6 +12,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include(FetchContent)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 
+enable_testing()
+
 add_subdirectory(src)
 add_subdirectory(test)
 
