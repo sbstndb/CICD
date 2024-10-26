@@ -9,5 +9,5 @@ FetchContent_MakeAvailable(
 )
 
 
-add_subdirectory(test)
+add_subdirectory(tested)
 
