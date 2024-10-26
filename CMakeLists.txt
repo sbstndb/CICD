@@ -2,12 +2,17 @@
 cmake_minimum_required(VERSION 3.18)
 
 # Nom du projet
-project(CICD)
+project(CICD LANGUAGES C CXX)
 
 # Spécifier le standard C++
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Ajouter l'exécutable
-add_executable(CICD src/main.cpp)
+
+include(FetchContent)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
+
+add_subdirectory(src)
+add_subdirectory(test)
+
 
