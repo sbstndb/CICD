@@ -14,7 +14,7 @@ TEST(Addtest, PositiveNumbers){
 }
 
 TEST(Addtest, Fauxnegatif){
-        int a = 1 ;
+        int a = 3 ;
         int b = 2 ;
         EXPECT_EQ(4, add_int(a,b)) ;
 }
